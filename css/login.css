@@ -1,0 +1,176 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+    
+/*Container*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter'sans-serif;  
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #F3CEBD;
+    position: absolute;
+}
+
+
+/*Formulario*/
+
+.formulariogeral {
+    width: 40%;
+    height: 40%;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.formulario {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+}
+
+.formulario input {
+    height: 40px;
+    border-color: #7A3D2B;
+    border-radius: 10px;
+    background: #F3CEBD;
+    border: #7A3D2B 1px solid;
+}
+
+.formulario button {
+    background-color: #FF4C09;
+    font-weight: bold;
+    font-size: 15.79px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+}
+
+.formulario button:hover {
+    background-color: #FF4C09;
+}
+
+.recover {
+    margin-top: 10px;
+    position: relative;
+}
+
+
+/*Botão Google*/
+
+.google {
+    height: 40px;
+    background-color:#7A3D2B;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.img-google{
+    width: 25px;
+    margin-right: 4px;
+}
+
+/*Imagem*/
+
+.login-img {
+   width: 360px;
+   
+}
+
+/*Fontes*/
+
+h1 {
+    color: #7A3D2B;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    display: flex;
+    justify-content: left;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.conta {
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content:left;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7A3D2B;
+}
+    
+a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #FF4C09;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h4 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: #7A3D2B;
+    font-size: 12px;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7A3D2B;
+    font-size: 17.23px;
+    font-weight: bold;
+}
+
+label {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: #7A3D2B;
+    font-size: 8.61px;
+}
+
+#username {
+    margin-bottom: 20px;
+}
+
+#password {margin-bottom: 30px;
+}
+
+
+@media (max-width: 800px) {
+    .login-img {
+      display: none; /* Faz a imagem desaparecer */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    h5 {
+      display: none; /* Faz a imagem desaparecer */
+    }
+  }

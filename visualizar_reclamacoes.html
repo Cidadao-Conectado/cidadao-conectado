@@ -39,23 +39,25 @@
             />
           </div>
           <div class="textfield">
-            <label for="area-especifica">Área especifica</label>
-            <select name="opcoes" id="opcoes">
-              <option value="">Água</option>
-              <option value="">Energia</option>
-              <option value="">Transporte</option>
-              <option value="">Segurança</option>
-              <option value="">Educação</option>
-              <option value="">Remoção de intulhos</option>
-              <option value="">Limpeza de rua</option>
-            </select>
+            <label for="area-especifica">Área específica</label>
+            <input list="areas" id="area-especifica" />
+            <datalist id="areas">
+              <option value="Água"></option>
+              <option value="Energia"></option>
+              <option value="Transporte"></option>
+              <option value="Segurança"></option>
+              <option value="Educação"></option>
+              <option value="Remoção de entulhos"></option>
+              <option value="Limpeza de rua"></option>
+            </datalist>
           </div>
           <div class="textfield">
             <label for="situacao">Situação</label>
-            <select name="situacao" id="situacao">
-              <option value="">Em análise</option>
-              <option value="">Conluido</option>
-            </select>
+            <input list="situacao" id="conslusao">
+            <datalist id="situacao">
+              <option value="Em análise"></option>
+              <option value="Conluido"></option>
+            </datalist>
           </div>
 
           <button

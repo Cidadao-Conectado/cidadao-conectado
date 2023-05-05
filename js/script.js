@@ -30,8 +30,8 @@ function validarSenha() {
 
 // Adiciona um evento de clique ao botão "Salvar"
 
-const botao = document.getElementById("enviar")
-botao.addEventListener("click", fnenviar) 
+const botao = document.getElementById("enviar");
+botao.addEventListener("click", fnenviar);
 function fnenviar(){
   
   // Obtém os valores dos campos de entrada
@@ -54,3 +54,5 @@ function fnenviar(){
   // exibe mensagem de sucesso
   alert('Reclamação cadastrada com sucesso!');
 }
+
+

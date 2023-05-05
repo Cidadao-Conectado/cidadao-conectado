@@ -1,0 +1,189 @@
+* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smythe&family=Source+Sans+Pro:wght@400;700&display=swap');
+    
+/*Container*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter'sans-serif;  
+}
+
+body {
+    
+    width: 100%;
+    background-color: #F3CEBD;
+    position: relative;
+    justify-content: space-around;
+    
+    
+}
+
+.imagem_canto {
+    width: 125px;
+    display: flex;
+    position:absolute;
+    left: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    height: 100px;
+    width: 1135px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;    
+}
+
+.cont {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    height: 430px;
+    width: 1135px;
+    justify-content:flex-start;
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+    box-shadow: 15px 15px 10px rgba(128, 71, 71, 0.445);
+    border-radius: 30px;
+}
+
+.mao_cidadao{
+    height: 130px;
+    left: 200px;
+    position: relative;
+    top: 20px;
+    filter:drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.445));
+
+}   
+
+.imagem_centro {
+    width: 30%;
+    position: relative;
+    left: 150px;
+}
+
+.formulario{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 270px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+}
+
+.formulario input {
+    height: 40px;
+    border-color: #7A3D2B;
+    border-radius: 10px;
+    background: #F3CEBD;
+    border: #7A3D2B 1px solid;
+}
+
+.campo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    display: flex;
+}
+
+.botao  {
+    align-items:center;
+    margin-top: 15px;
+    justify-content:space-between;
+    width: 400px;
+    display: flex;
+}
+
+.botao button{
+    height: 40px;
+    width: 100px;
+    background-image: linear-gradient(to right, rgba(238, 87, 87, 1), rgba(251, 114, 76, 1));
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15.79px;
+    font-weight: 700;
+}
+
+/*fontes*/
+
+a {
+    font-size: 8.61px;
+    font-weight: 400;
+    color: rgba(122, 61, 43, 1);
+    font-weight: bold;
+    display: flex;
+}
+
+h1{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 55px;
+    bottom: 10px;
+    color: rgba(254, 63, 7, 1);
+    text-shadow: 3px 3px 8px rgba(24, 21, 21, 0.445);
+    font-family: 'Smythe';
+    font-size: 64px;
+}
+
+h2{
+    color: rgba(122, 61, 43, 1);
+    Font family: "Source Sans Pro";
+    Font style: Bold;
+    font-size: 25.83px;
+}
+h3{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    font-size: 8.61px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 400px;
+    color: #7A3D2B;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+label {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 8.61px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 400px;
+    color: #7A3D2B;
+}
+
+#question {
+height: 80px;
+background-color: #F3CEBD;
+border-radius: 10px;
+border: #7A3D2B 1px solid;
+}
+
+#username{margin-bottom: 10px;
+}
+
+#username:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #F3CEBD inset !important;
+}
+
+#City{margin-bottom: 10px}
+
+#Zone{margin-bottom: 5px;
+    height: 40px;
+    border-color: #7A3D2B;
+    border-radius: 10px;
+    background: #F3CEBD;
+    border: #7A3D2B 1px solid;}  

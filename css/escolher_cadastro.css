@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+* {font-family: 'Inter', sans-serif;}
+
+
+.header {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(0.25turn, #ffb7a3, #f3cebd, #f3cebd);
+}
+
+.cidadao-prefeitura {
+    color: #7a3d2b;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+
+.paragrafos {
+    padding-top: 30px;
+    display: flex;
+    color: #7A3D2B;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.prefeitura {
+    color: #7a3d2b;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.bordas {
+    padding-top: 100px;
+    padding-bottom: 10;
+    border-radius: 70px;
+    border-style: hidden solid solid hidden;
+    color:#7A3D2B;
+    box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f3cebd;
+
+}
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .main {
+    text-align: left;
+    background: deepskyblue;
+  }
+      
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+  }
+  
+  .submit {
+    width: 50%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px #7a3d2b;
+    background-image: linear-gradient(to right, #ee5757, #fe904b);
+  }
+  

@@ -64,36 +64,17 @@ body {
 
 }   
 
-.imagem_centro {
-    width: 30%;
-    position: relative;
-    left: 150px;
-}
+
 
 .formulario{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 270px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    position: absolute;
+    left: 130px;
     width: 400px;
     height: 300px;
-    display: flex;
-}
-
-.formulario input {
-    height: 40px;
-    border-color: #7A3D2B;
-    border-radius: 10px;
-    background: #F3CEBD;
-    border: #7A3D2B 1px solid;
-}
-
-.campo{
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    display: flex;
+    display:contents;
 }
 
 .botao  {
@@ -102,6 +83,7 @@ body {
     justify-content:space-between;
     width: 400px;
     display: flex;
+    
 }
 
 .botao button{
@@ -136,54 +118,28 @@ h1{
     font-size: 64px;
 }
 
-h2{
-    color: rgba(122, 61, 43, 1);
-    Font family: "Source Sans Pro";
-    Font style: Bold;
-    font-size: 25.83px;
-}
-h3{
-    display: flex;
-    align-items: left;
+.card{
+    width: 100px;
+    height: 200px;
+    background-color: #e7b59e;
+    box-shadow: 15px 15px 10px rgba(128, 71, 71, 0.445);
+    border-radius: 30px;
+    font-size: 15.61px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 400px;
+    color: #7A3D2B;
     justify-content: space-between;
-    font-size: 8.61px;
+    display:flex;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 15.61px;
     font-family: 'Source Sans Pro', sans-serif;
     width: 400px;
     color: #7A3D2B;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 2px;
-}
-
-label {
+    align-items: center;
+    justify-content: center;
     display: flex;
-    justify-content: left;
-    align-items: left;
-    font-size: 8.61px;
-    font-family: 'Source Sans Pro', sans-serif;
-    width: 400px;
-    color: #7A3D2B;
+    font-weight: bold;
 }
-
-#question {
-height: 80px;
-background-color: #F3CEBD;
-border-radius: 10px;
-border: #7A3D2B 1px solid;
-}
-
-#username{margin-bottom: 10px;
-}
-
-#username:-webkit-autofill{
-    -webkit-box-shadow: 0 0 0px 1000px #F3CEBD inset !important;
-}
-
-#City{margin-bottom: 10px}
-
-#Zone{margin-bottom: 5px;
-    height: 40px;
-    border-color: #7A3D2B;
-    border-radius: 10px;
-    background: #F3CEBD;
-    border: #7A3D2B 1px solid;}  

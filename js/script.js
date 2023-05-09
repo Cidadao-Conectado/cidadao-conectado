@@ -16,6 +16,7 @@ function esconderSenha(senha) {
 
 //Valida se o campo senha e confirmar senha sejam os mesmos
 function validarSenha() {
+  localStorage.setItem("chave", "valor");
   var senha = document.getElementById("senha").value;
   var confirmarSenha = document.getElementById("confirmar-senha").value;
 

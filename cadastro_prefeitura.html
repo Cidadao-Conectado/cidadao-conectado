@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/cadastro_prefeitura.css" />
-    <script src="/js/script.js"></script>
+    <link rel="icon" href="/Imagens/mao_cidadao.png" type="image/x-icon">
     <title>Cadastre a prefeitura</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
         <img class="prefeitura" src="/Imagens/prefeitura.svg" alt="" />
       </div>
       <div class="right-login">
-        <form onsubmit="return validarSenha()">
+        <form id="formPrefeitura"onsubmit="return cadastro()">
           <h2>Faça seu cadastro</h2>
           <div class="textfield">
             <label for="inscricao-municipal">Inscrição Municipal:</label>
@@ -26,6 +26,7 @@
               name="inscricao-municipal"
               placeholder="Insira sua inscrição "
               required
+              
             />
           </div>
           <div class="textfield">
@@ -36,6 +37,7 @@
               name="cidade-uf"
               placeholder="Insira sua cidade/uf"
               required
+              
             />
           </div>
           <div class="textfield">
@@ -46,6 +48,7 @@
               name="email"
               placeholder="Insira seu email aqui"
               required
+              
             />
           </div>
           <div class="textfield">
@@ -57,6 +60,7 @@
                   name="senha"
                   placeholder="Insira sua senha"
                   required
+                  
                 /><img
                   src="/Imagens/olho_fechado.svg"
                   class="eye-icon"
@@ -73,8 +77,8 @@
                   id="confirmar-senha"
                   name="confirmar-senha"
                   placeholder="Confirmar senha"
-                  class="confirmar-senha"
                   required
+                  
                 />
                 <img
                   src="/Imagens/olho_fechado.svg"
@@ -94,5 +98,6 @@
         </form>
       </div>
     </div>
+    <script src="/js/script.js"></script>
   </body>
 </html>

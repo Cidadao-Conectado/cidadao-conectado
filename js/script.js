@@ -26,6 +26,7 @@ function validarSenha() {
   }
   return true;
 }
+
 /*Obtém os dados do formulário, verifica se o e-mail inserido já foi cadastrado anteriormente e, em seguida, armazena os dados da prefeitura*/
 function dadosForm() {
   const form = document.getElementById("formPrefeitura");
@@ -57,4 +58,33 @@ function cadastro() {
     return;
   }
   dadosForm();
+}
+
+//Cadastrar Reclamação
+
+// Adiciona um evento de clique ao botão "Salvar"
+
+const botao = document.getElementById("enviar");
+botao.addEventListener("click", fnenviar);
+function fnenviar(){
+  
+  // Obtém os valores dos campos de entrada
+  const idCidadao = document.getElementById("username").value;
+  const cidadeUF = document.getElementById("City").value;
+  const areaEspecifica = document.getElementById("Zone").value;
+  const reclamacao = document.getElementById("Question").value;
+  
+  // cria objeto com as informações da reclamação
+  var reclamacaoObj = {
+    idCidadao: idCidadao,
+    cidadeUF: cidadeUF,
+    areaEspecifica: areaEspecifica,
+    reclamacao: reclamacao
+  }
+
+  // adiciona a reclamação no localStorage
+  localStorage.setItem(idCidadao, JSON.stringify(reclamacaoObj));
+
+  // exibe mensagem de sucesso
+  alert('Reclamação cadastrada com sucesso!');
 }

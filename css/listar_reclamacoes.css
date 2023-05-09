@@ -117,24 +117,21 @@ h1{
 }
 
 .card{
-    width: 100px;
+    width: 300px;
     height: 200px;
     background-color: #e7b59e;
     box-shadow: 15px 15px 10px rgba(128, 71, 71, 0.445);
     border-radius: 30px;
     font-size: 15.61px;
     font-family: 'Source Sans Pro', sans-serif;
-    width: 400px;
     color: #7A3D2B;
     justify-content:space-between;
-    display:flex;
     margin-bottom: 10px;
 }
 
 h2{
     font-size: 15.61px;
     font-family: 'Source Sans Pro', sans-serif;
-    width: 400px;
     color: #7A3D2B;
     align-items: center;
     justify-content: center;

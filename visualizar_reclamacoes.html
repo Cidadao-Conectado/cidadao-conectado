@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>visualizar_reclamacoes</title>
-    <link rel="stylesheet" href="css/visualizar_reclamacoes.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/visualizar_reclamacoes.css" />
+    <link rel="icon" href="/Imagens/mao_cidadao.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="/Imagens/bolinhas.svg" class="bolinhas" alt="" />
+        <h1>Acompanhe sua reclamação</h1>
+        <div class="mao-cidadao">
+          <img src="/Imagens/mao_cidadao.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="left-visualizar">
+        <img
+          src="Imagens/visualizar_reclamacoes_pessoas.svg"
+          alt="Tres pessoas sendo uma mulher e dois homens apontando para balões de fala"
+        />
+      </div>
+      <div class="right-visualizar">
+        <form>
+          <h2>Histórico</h2>
+          <div class="textfield">
+            <label for="protocolo">Protocolo</label>
+            <input
+              type="number"
+              id="protocolo"
+              name="protocolo"
+              placeholder="Insira seu protocolo aqui:"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <label for="area-especifica">Área específica</label>
+            <input list="areas" id="area-especifica" />
+            <datalist id="areas">
+              <option value="Água"></option>
+              <option value="Energia"></option>
+              <option value="Transporte"></option>
+              <option value="Segurança"></option>
+              <option value="Educação"></option>
+              <option value="Remoção de entulhos"></option>
+              <option value="Limpeza de rua"></option>
+            </datalist>
+          </div>
+          <div class="textfield">
+            <label for="situacao">Situação</label>
+            <input list="situacao" id="conslusao">
+            <datalist id="situacao">
+              <option value="Em análise"></option>
+              <option value="Conluido"></option>
+            </datalist>
+          </div>
+
+          <button
+            type="submit"
+            class="submit"
+            name="visualizar"
+            value="visualizar reclamacao"
+          >
+            Visualizar
+          </button>
+
+          <div class="textfield">
+            <label for="">Reclamação</label>
+            <textarea name="reclamacao" id="reclamacao"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
